@@ -1,7 +1,15 @@
-\documentclass{article}
+\documentclass[letter]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{blindtext}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\geometry{
+left=20mm,
+top=20mm,
+right=20mm,
+bottom=20mm,
+}
 
 
 \setlength{\parindent}{4em}
@@ -17,26 +25,28 @@
 \maketitle
 
 \section*{Team Members}
+\begin{itemize}
+	\item Bryan Long will be designated to video demonstration
+	\item Daizo Mori will be designated to main author of the mid project report
+	\item Daniel Schell will be designated to main author of the user manual
+	\item Sam Foucart will be designated to main author of the blog post
+\end{itemize}
 
-Team Members:
-	Names and Responsibilities
-	
+We will share responsibility for coding, research, and writing the final report. We will also assist main authors on their reports if they need it.
+
 \section*{Motivations}
-	
-Motivations:
+
+The motivation of this project is to simplify tracking packages that are ordered online. Without an application like this, the only way to track packages would be to sort through emails that can get lost or moved to spam folders. With our application, it would all be stored in one place so they can be easily accessed.
 
 \section*{Methodology}
 
-Methodology:
-	How do you plan to implement this project
-		Specific Languages, tools
-	How do you plan to test it
-	How will the end user use it
-	
+We will use the Amazon MWS API for Node.js to get order information from the user. We will create a GUI fronted with Electron.js, so that the application can also be written in Node.js, and can be rolled out on all platforms that support Electron.js such as Windows, Linux, and MacOS. The Amazon MWS has an Orders API and a Fulfillment Outbound Shipment API which has a GetPackageTrackingDetails function. The code will call from the API and display it to the user using an Electron.js frontent. The application will be distributed using electron-forge.
+
+We will test the application by using it on our own Amazon accounts. Daniel frequently orders things on Amazon so we won't have to worry about not having an account with orders to track.
+
+The end user will open a desktop application and enter their Amazon account information or order ID, and then they will be able to see all of their order and package information.
+
 \section*{Milestones}
-	
-Milestones:
-	Timeline of at least 3 Milestones
 
-
+By April 18th we should have code pulling account and order information without a GUI frontend. Then by April 25th we should have a minimalist frontend without much CSS material styling. Then by April 29th, the CSS styling should be done. And by April 30th, all edge cases should be tested, such as if the user enters an account that doesn't exist, the program shouldn't crash if they push buttons. And it shouldn't break if they don't put in an order correctly.
 \end{document}
