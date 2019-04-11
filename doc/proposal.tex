@@ -36,17 +36,15 @@ We will share responsibility for coding, research, and writing the final report.
 
 \section*{Motivations}
 
-The motivation of this project is to simplify tracking packages that are ordered online. Without an application like this, the only way to track packages would be to sort through emails that can get lost or moved to spam folders. With our application, it would all be stored in one place so they can be easily accessed.
+This application will control a raspberry pi connected to a speaker to play music over bluetooth. This will be an example of a media system controlled by a computer. We will have an android app that sends which song to play out of a list, so that the raspberry pi will play it.
 
 \section*{Methodology}
 
-We will use the Amazon MWS API for Node.js to get order information from the user. We will create a GUI fronted with Electron.js, so that the application can also be written in Node.js, and can be rolled out on all platforms that support Electron.js such as Windows, Linux, and MacOS. The Amazon MWS has an Orders API and a Fulfillment Outbound Shipment API which has a GetPackageTrackingDetails function. The code will call from the API and display it to the user using an Electron.js frontent. The application will be distributed using electron-forge.
+We will make an android app that communicates with the raspberry pi over bluetooth. The app will let users select the song to play. When they select it, it will send information to the raspberry pi that it will process to know what song to play.
 
-We will test the application by using it on our own Amazon accounts. Daniel frequently orders things on Amazon so we won't have to worry about not having an account with orders to track.
-
-The end user will open a desktop application and enter their Amazon account information or order ID, and then they will be able to see all of their order and package information.
+The raspberry pi will be listening to the bluetooth socket using the pybluez library for python. We can then use the mpg123 command line application to play the song. The raspberry pi will be hardwired to the speaker using the headphone output.
 
 \section*{Milestones}
 
-By April 17th we should have code pulling account and order information without a GUI frontend. Also by April 18th a blog post will be done describing any problems we have had on developing our project. Then by April 23rd we should have a minimalist frontend without much CSS material styling. Also on April 25th a report detailing what we have accomplished so far will be produced. Work on a user manual, detailing how to operate our program will start by April 25th, and be done by April 29th at the latest. Then by April 29th, the CSS styling should be done. And by April 30th, all edge cases should be tested, such as if the user enters an account that doesn't exist, the program shouldn't crash if they push buttons. And it shouldn't break if they don't put in an order correctly.
+By April 18th we should have code sending strings from an android app to a pi. Also by April 18th a blog post will be done describing any problems we have had on developing our project. This will include why we had to change projects. Then by April 23rd we should be able to play music based off of a sent string. Also on April 25th a report detailing what we have accomplished so far will be produced. Work on a user manual, detailing how to operate our program will start by April 25th, and be done by April 29th at the latest. Then by April 29th, the gui and list of songs will be done. And by April 30th, all edge cases should be tested, the program shouldn't crash if they push buttons. And it shouldn't break if they disable bluetooth or if the device won't connect immediately.
 \end{document}
