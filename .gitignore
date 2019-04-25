@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.iml
 .gradle
 /local.properties
@@ -17,3 +18,6 @@
 
 node_modules
 >>>>>>> 94120e6035cee5e5f8956fe5e574cb2e7671ab93
+=======
+
+>>>>>>> c1019155b546b71f011a2012d76f2965c016b2d3
