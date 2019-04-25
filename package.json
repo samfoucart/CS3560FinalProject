@@ -1,0 +1,25 @@
+{
+  "name": "package-tracker",
+  "version": "1.0.0",
+  "description": "This is a test of electron",
+  "main": "main.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohio-university-cs3560-spring-2019/final-project-repo-team-k.git"
+  },
+  "author": "Sam Foucart, Bryan Long, Daizo Mori, Daniel Schell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ohio-university-cs3560-spring-2019/final-project-repo-team-k/issues"
+  },
+  "homepage": "https://github.com/ohio-university-cs3560-spring-2019/final-project-repo-team-k#readme",
+  "dependencies": {
+    "electron": "^4.1.3"
+  }
+}

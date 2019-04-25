@@ -1,0 +1,50 @@
+\documentclass[letter]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{blindtext}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\geometry{
+left=20mm,
+top=20mm,
+right=20mm,
+bottom=20mm,
+}
+
+
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{2.0}
+
+\title{CS3560 Team K Final Project Proposal}
+\author{Sam Foucart, Bryan Long, Daizo Mori, Daniel Schell}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Team Members}
+\begin{itemize}
+	\item Bryan Long will be designated to video demonstration
+	\item Daizo Mori will be designated to main author of the mid project report
+	\item Daniel Schell will be designated to main author of the user manual
+	\item Sam Foucart will be designated to main author of the blog post
+\end{itemize}
+
+We will share responsibility for coding, research, and writing the final report. We will also assist main authors on their reports if they need it.
+
+\section*{Motivations}
+
+This application will control a raspberry pi connected to a speaker to play music over bluetooth. This will be an example of a media system controlled by a computer. We will have an android app that sends which song to play out of a list, so that the raspberry pi will play it.
+
+\section*{Methodology}
+
+We will make an android app that communicates with the raspberry pi over bluetooth. The app will let users select the song to play. When they select it, it will send information to the raspberry pi that it will process to know what song to play.
+
+The raspberry pi will be listening to the bluetooth socket using the pybluez library for python. We can then use the mpg123 command line application to play the song. The raspberry pi will be hardwired to the speaker using the headphone output.
+
+\section*{Milestones}
+
+By April 18th we should have code sending strings from an android app to a pi. Also by April 18th a blog post will be done describing any problems we have had on developing our project. This will include why we had to change projects. Then by April 23rd we should be able to play music based off of a sent string. Also on April 25th a report detailing what we have accomplished so far will be produced. Work on a user manual, detailing how to operate our program will start by April 25th, and be done by April 29th at the latest. Then by April 29th, the gui and list of songs will be done. And by April 30th, all edge cases should be tested, the program shouldn't crash if they push buttons. And it shouldn't break if they disable bluetooth or if the device won't connect immediately.
+\end{document}
