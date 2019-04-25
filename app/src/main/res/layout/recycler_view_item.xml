@@ -13,6 +13,7 @@
         android:contentDescription="@string/play_button"/>
 
     <TextView
+        android:id="@+id/song_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/play_button"
